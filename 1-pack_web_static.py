@@ -16,7 +16,7 @@ def do_pack():
         local("mkdir -p versions")
 
         """create an archive file"""
-        local("tar -cvzf {} web_static/".format(file_path))
+        local("tar -cvzf {} web_static".format(file_path))
 
         """return the path to the archive file created"""
         return "{}".format(file_path)
